@@ -1,84 +1,130 @@
 {
   "intents": [
     {
-      "tag": "greeting",
+      "tag": "Saludo",
       "patterns": [
-        "Hi",
+        "Hola",
         "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "¿Como estás?",
+        "Buen dia"
       ],
       "responses": [
         "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "Hola, gracias por visitarnos",
+        "¿En qué te puedo ayudar?"
       ]
     },
     {
-      "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "tag": "Despedida",
+      "patterns": ["Chao", "Nos vemos", "Hasta luego"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "Nos vemos luego, gracias por visitarnos",
+        "Ten un buen dia",
+        "Vuelve pronto."
       ]
     },
     {
-      "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      "tag": "Agradecimiento",
+      "patterns": ["Gracias", "Gracias a ti", "Fue de gran ayuda", "Muchas gracias!"],
+      "responses": ["Dispuesto a ayudar", "Desde luego", "Un placer"]
     },
     {
-      "tag": "items",
+      "tag": "Nombre",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "¿Cómo se llama el museo en su totalidad?",
+        "¿Qué nombre completo tiene el museo?",
+        "¿Cuál es el nombre completo del museo?"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "Museo de la Musica Salvador Zaragocin Tapia."
+    ]},
+    {
+      "tag": "Lugar",
+      "patterns": [
+        "¿Dónde se encuentra exactamente el museo?",
+        "¿Cuál es la dirección precisa del museo?",
+        "¿En que lugar específico está localizado el museo?",
+        "¿Dónde esta situado el museo con exactitud?"
+      ],
+      "responses": [
+        "Calle Bernardo Valdivieso, entre Rocafuerte y Miguel Riofrío, en el interior del Centro Cultural Bernardo Valdivieso, Loja, Ecuador."
       ]
     },
     {
-      "tag": "payments",
+      "tag": "Horarios",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "¿Qué horarios tiene el museo para abrir y cerrar?",
+        "¿En qué momentos está abierto y cerrado el museo?",
+        "¿Cuáles son las horas de funcionamiento del museo?"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "De lunes a viernes, de 09:00 a 19:00."
+      ]
+    },
+{
+      "tag": "Objetos del museo",
+      "patterns": [
+        "¿Qué objetos o piezas sobresalientes alberga el museo, y cuál es su relevancia histórica?", 
+        "¿Cuáles son las piezas más destacadas del museo, y qué importancia tienen en su contexto histórico?", 
+        "¿Qué elementos notables forman parte de la colección del museo, y cuál es su historia y significado?"
+      ],
+      "responses": [
+        "El museo exhibe instrumentos musicales, partituras originales, fotografías y grandes compositores lojanos desde 1870 hasta 1920. También se encuentran reliquias como partituras que identifican la cultura musical de Loja."
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "Autores",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "¿Qué artistas o autores son responsables de las principales obras del museo?", 
+        "¿Quiénes crearon las piezas más destacadas que se exhiben en el museo?" 
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "Salvador Zaragocín Tapia es una de las figuras homenajeadas, junto con otros músicos ilustres de Loja como Carlos Miguel Palacios y Segundo Cueva Celi."
       ]
     },
     {
-      "tag": "funny",
+      "tag": "Políticas",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "¿Qué normas establece el museo para el uso de cámaras y teléfonos?",
+        "¿Cuáles son las reglas del museo sobre tomar fotografías o usar dispositivos móviles?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "El museo permite el uso de cámaras y teléfonos, pero establece ciertas condiciones para su uso.",
+        "Es posible utilizar tanto cámaras como celulares en el museo, siempre que se respeten las normas indicadas."
+      ]
+    },
+    {
+      "tag": "Recomendaciones",
+      "patterns": [
+        "¿Qué exhibiciones son ideales para quienes visitan el museo por primera vez?",
+        "¿Qué exposiciones deberían priorizar los visitantes primerizos?",
+        "¿Qué exhibiciones se sugieren para quienes llegan al museo por primera vez?"
+      ],
+      "responses": [
+        "Las salas que documentan cronológicamente la historia musical de Loja desde el siglo XIX son imprescindibles. También es recomendada la experiencia interactiva de observar las partituras y escuchar los ensayos de la Orquesta Sinfonica."
+      ]
+    },
+    {
+      "tag": "Visitantes",
+      "patterns": [
+        "¿Qué tipos de personas suelen visitar el museo con mayor frecuencia?",
+        "¿Quiénes conforman el perfil habitual de los visitantes del museo"
+      ],
+      "responses": [
+        "Visitantes locales interesados en la música tradicional, así como turistas nacionales e internacionales que buscan conocer la historia cultural de Loja."
+      ]
+    },
+    {
+      "tag": "Obras",
+      "patterns": [
+        "¿Cuáles son las obras que no se pueden dejar de ver en el museo?",
+        "¿Qué piezas se destacan como esenciales para los visitantes del museo?",
+        "¿Qué obras son consideradas imprescindibles para apreciar en el museo?"
+      ],
+      "responses": [
+        "Las partituras originales, fotografias historicas y los instrumentos emblemáticos de la región son elementos destacados. La tienda del museo también ofrece material relacionado, como libros y CDs, para quienes deseen un recuerdo."
       ]
     }
   ]
 }
+
