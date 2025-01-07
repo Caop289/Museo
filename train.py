@@ -9,6 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem.snowball import SnowballStemmer
+from model import NeuralNet
 
 # Descargar recursos necesarios de NLTK
 import nltk
@@ -18,6 +19,8 @@ nltk.download('punkt')
 # Configuración para español
 stemmer = SnowballStemmer("spanish")
 stop_words = set(stopwords.words('spanish'))
+
+
 
 def tokenize(sentence):
     """
